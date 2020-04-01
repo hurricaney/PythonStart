@@ -1,0 +1,127 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>f9f3a478-e535-451c-95ce-a97c9cf6cf34</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>TCP\UdpClient.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonStart</Name>
+    <RootNamespace>PythonApplication1</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Data\ClassDemo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\Comprehension.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\Decorator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\Description.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\func.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\Iterator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\Job.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\Job1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\MagicMethod.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\Test.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\TryCatch.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\While.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\wordcount.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\Year.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PythonApplication1.py" />
+    <Compile Include="TCP\chat.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TCP\TcpClient.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TCP\TcpServer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TCP\UdpClient.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TCP\UdpServer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Thread\ConditionLock.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Thread\Threading.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Thread\RLock.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tkinter\mainForm.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tkinter\pack.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tkinter\tk_bind.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tkinter\tk_grid.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tkinter\tk_hello.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tkinter\tk_place.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Network\" />
+    <Folder Include="TCP\" />
+    <Folder Include="Tkinter\" />
+    <Folder Include="Thread\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
